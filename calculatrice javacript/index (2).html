@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaSctipt Calculator !!!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+  <div class="principal">
+    <form name="form">
+    <div class="affiche">
+      <input type="text" placeholder="0" name="afficheResultat" />
+    </div>
+      <div class="buttons">
+        <div class="row">
+        <input type="button" name="b7" value="7" onClick="calculNbre(b7.value)">
+          <input type="button" name="b8" value="8" onClick="calculNbre(b8.value)">
+          <input type="button" name="b9" value="9" onClick="calculNbre(b9.value)">
+          <input type="button" name="addb" value="+" onClick="calculNbre(addb.value)">
+        </div>
+        
+        <div class="row">
+        <input type="button" name="b4" value="4" onClick="calculNbre(b4.value)">
+          <input type="button" name="b5" value="5" onClick="calculNbre(b5.value)">
+          <input type="button" name="b6" value="6" onClick="calculNbre(b6.value)">
+          <input type="button" name="subb" value="-" onClick="calculNbre(subb.value)">
+        </div>
+        
+        <div class="row">
+        <input type="button" name="b1" value="1" onClick="calculNbre(b1.value)">
+          <input type="button" name="b2" value="2" onClick="calculNbre(b2.value)">
+          <input type="button" name="b3" value="3" onClick="calculNbre(b3.value)">
+          <input type="button" name="mulb" value="*" onClick="calculNbre(mulb.value)">
+        </div>
+        
+        <div class="row">
+        <input type="button" name="b0" value="0" onClick="calculNbre(b0.value)">
+          <input type="button" name="potb" value="." onClick="calculNbre(potb.value)">
+          <input type="button" name="divb" value="/" onClick="calculNbre(divb.value)">
+          <input type="button" class="egal" value="=" onClick="afficheResultat.value=eval(afficheResultat.value)">
+        </div>
+
+        <div class="row">
+          <input type="button" name="effacher" value="Clear All" id="effacher" onclick="afficheResultat.value=' '">
+        </div>
+      </div>
+    
+    </form>
+	
+	<script>
+	     function calculNbre(result){
+             form.afficheResultat.value=form.afficheResultat.value+result;
+            }
+	</script>
+	
+  </div>
+</body>
+  
+</html>
+
